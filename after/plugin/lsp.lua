@@ -7,8 +7,8 @@ lsp.ensure_installed({
   'gopls',
   'intelephense',
   'tailwindcss',
-  'emmet_ls',
   'html',
+    'emmet_ls'
 })
 
 -- Fix Undefined global 'vim'
