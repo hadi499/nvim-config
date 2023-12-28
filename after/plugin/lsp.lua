@@ -8,7 +8,8 @@ lsp.ensure_installed({
   'intelephense',
   'tailwindcss',
   'html',
-    'emmet_ls'
+  'emmet_ls',
+  'clangd',
 })
 
 -- Fix Undefined global 'vim'
@@ -24,8 +25,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ["<C-Space>"] = cmp.mapping.complete(),
 })
 
+
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
+
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
